@@ -6,6 +6,7 @@ import {
   BackgroundImage,
   Image,
   Box,
+  Button,
 } from "@mantine/core";
 import styles from "./Hero.module.css";
 
@@ -75,12 +76,12 @@ export default function Hero() {
   return (
     <Box className={styles.hero}>
       <Box className={styles.controls}>
-        <button className={styles.controlButton} onClick={handlePrev}>
+        <Button className={styles.controlButton} onClick={handlePrev}>
           ◀
-        </button>
-        <button className={styles.controlButton} onClick={handleNext}>
+        </Button>
+        <Button className={styles.controlButton} onClick={handleNext}>
           ▶
-        </button>
+        </Button>
       </Box>
 
       <Box className={styles.imageWrapper}>
@@ -111,9 +112,6 @@ export default function Hero() {
           <Title size={80} order={1}>
             {images[currentIndex].title}
           </Title>
-          {/* <Text size="xl" fw={500} mt="md">
-            {images[currentIndex].text}
-          </Text> */}
         </Box>
       </Container>
 
