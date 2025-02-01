@@ -5,6 +5,7 @@ import "@mantine/core/styles.css";
 import App from "./App";
 import { MantineProvider } from "@mantine/core";
 import { Footer, Navbar } from "./components/global";
+import { MantineEmotionProvider } from "@mantine/emotion";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -13,9 +14,11 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <MantineProvider>
-      <Navbar />
-      <App />
-      <Footer />
+      <MantineEmotionProvider>
+        <Navbar />
+        <App />
+        <Footer />
+      </MantineEmotionProvider>
     </MantineProvider>
   </React.StrictMode>,
 );

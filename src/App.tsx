@@ -1,8 +1,13 @@
 import "./App.css";
-import { Hero } from "./components/Landing";
+import { EducationSection, Hero } from "./components/Landing";
 
 function App() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <EducationSection />
+    </>
+  );
 }
 
 export default App;
