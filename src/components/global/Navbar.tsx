@@ -11,19 +11,13 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./Navbar.module.css";
+import { links } from "../../constants/Links";
 
 const Navbar = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
   const theme = useMantineTheme();
 
-  const links = [
-    { title: "Home", href: "#" },
-    { title: "Courses", href: "#" },
-    { title: "Teachers", href: "#" },
-    { title: "Student Gallery", href: "#" },
-    { title: "Contact", href: "#" },
-  ];
   return (
     <Box pb={0}>
       <header className={classes.header}>
