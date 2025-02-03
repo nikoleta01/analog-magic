@@ -1,5 +1,5 @@
 .footer {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background: rgb(228, 93, 6);
   background: linear-gradient(
     90deg,
@@ -7,14 +7,14 @@
     rgba(255, 152, 44, 1) 41%,
     rgba(255, 192, 49, 1) 95%
   );
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--mantine-spacing-md) var(--mantine-spacing-md);
+  padding-top: 15px;
   flex-wrap: wrap;
   text-align: center;
 
@@ -44,16 +44,4 @@
   @media (max-width: $mantine-breakpoint-sm) {
     justify-content: center;
   }
-}
-
-.icon {
-  color: red;
-  transition:
-    background 0.3s ease,
-    color 0.3s ease;
-}
-
-.icon:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: #1a1a1a;
 }

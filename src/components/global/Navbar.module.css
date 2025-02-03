@@ -1,5 +1,5 @@
 .header {
-  height: 80px;
+  height: 100px;
   background: rgb(228, 93, 6);
   background: linear-gradient(
     90deg,
@@ -21,7 +21,7 @@
   text-decoration: none;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-weight: 500;
-  font-size: 18px; /* Väčšie písmo */
+  font-size: 18px;
 
   @media (max-width: $mantine-breakpoint-md) {
     height: 42px;
