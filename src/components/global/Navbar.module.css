@@ -1,6 +1,5 @@
 .header {
-  height: 60px;
-
+  height: 80px;
   background: rgb(228, 93, 6);
   background: linear-gradient(
     90deg,
@@ -8,10 +7,9 @@
     rgba(255, 152, 44, 1) 41%,
     rgba(255, 192, 49, 1) 95%
   );
+
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  border-bottom: 1px solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
 }
 
 .link {
@@ -23,9 +21,9 @@
   text-decoration: none;
   color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
   font-weight: 500;
-  font-size: var(--mantine-font-size-sm);
+  font-size: 18px; /* Väčšie písmo */
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: $mantine-breakpoint-md) {
     height: 42px;
     width: 100%;
   }
