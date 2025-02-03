@@ -5,11 +5,11 @@ import {
   Divider,
   Drawer,
   Group,
+  Image,
   ScrollArea,
   useMantineTheme,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import { MantineLogo } from "@mantinex/mantine-logo";
 import classes from "./Navbar.module.css";
 import { links } from "../../constants/Links";
 
@@ -21,11 +21,10 @@ const Navbar = () => {
   return (
     <Box pb={0}>
       <header className={classes.header}>
-        <Group justify="space-between" h="100%">
-          {/* LOGO SWAP */}
-          <MantineLogo size={30} />
+        <Group justify="space-between" h="100%" mx={80}>
+          <Image src="/images/logo/logo1.png" h={80} w={180} />
 
-          <Group h="100%" gap={15} visibleFrom="sm" align="right">
+          <Group h="100%" gap={15} visibleFrom="lg" align="right">
             {links.map((link) => (
               <a href={link.href} className={classes.link}>
                 {link.title}
@@ -33,7 +32,7 @@ const Navbar = () => {
             ))}{" "}
           </Group>
 
-          <Group visibleFrom={"sm"}>
+          <Group visibleFrom={"lg"}>
             <Button color={theme.colors.orange[6]}>Log in</Button>
             <Button color="black">Sign up</Button>
           </Group>
@@ -41,7 +40,7 @@ const Navbar = () => {
           <Burger
             opened={drawerOpened}
             onClick={toggleDrawer}
-            hiddenFrom="sm"
+            hiddenFrom="lg"
           />
         </Group>
       </header>
@@ -49,10 +48,10 @@ const Navbar = () => {
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
-        size="80%"
+        size="40%"
         padding="md"
         title="--logo-"
-        hiddenFrom="sm"
+        hiddenFrom="lg"
         zIndex={1000000}
         position="right"
         transitionProps={{ transition: "slide-left", duration: 550 }}

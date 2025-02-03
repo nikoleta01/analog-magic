@@ -1,7 +1,8 @@
 import "./App.css";
+import { Hero } from "./components/Landing";
 
 function App() {
-  return null;
+  return <Hero />;
 }
 
 export default App;
