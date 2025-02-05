@@ -1,11 +1,11 @@
 import "./App.css";
-import { EducationalSection, Hero } from "./components/Landing";
+import { EducationSection2, Hero } from "./components/Landing";
 
 function App() {
   return (
     <>
       <Hero />
-      <EducationalSection />
+      <EducationSection2 />
     </>
   );
 }

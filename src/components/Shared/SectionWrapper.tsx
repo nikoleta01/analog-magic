@@ -14,7 +14,7 @@ const SectionWrapper = ({
   children,
 }: SectionWrapperProps) => {
   return (
-    <Container my={20}>
+    <Container fluid my={20}>
       <SectionName
         sectionName={sectionName}
         sectionNumber={sectionNumber}

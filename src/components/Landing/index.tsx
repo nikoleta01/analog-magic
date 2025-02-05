@@ -1,2 +1,2 @@
 export { default as Hero } from "./Hero";
-export { default as EducationalSection } from "./EducationalSection";
+export { default as EducationSection2 } from "./EducationSection";
