@@ -19,7 +19,7 @@ const Footer = () => {
 
   const items = linksFooter.map((link) => (
     <Anchor
-      c="black"
+      c="white"
       key={link.title}
       href={link.href}
       lh={6}
@@ -35,7 +35,13 @@ const Footer = () => {
     <div className={classes.footer}>
       <Container>
         <div className={classes.inner}>
-          <Image src="/images/logo/logo2.png" h={100} w={200} mb={10} />
+          <Image
+            src="/images/logo/logo2.png"
+            style={{ filter: "invert(1)" }}
+            h={100}
+            w={200}
+            mb={10}
+          />
 
           <Group className={classes.links}>{items}</Group>
 

@@ -1,12 +1,6 @@
 .footer {
   /* margin-top: 20px; */
-  background: rgb(228, 93, 6);
-  background: linear-gradient(
-    90deg,
-    rgba(228, 93, 6, 1) 0%,
-    rgba(255, 152, 44, 1) 41%,
-    rgba(255, 192, 49, 1) 95%
-  );
+  background: #0f0f0f;
   padding: 15px 0;
 }
 
