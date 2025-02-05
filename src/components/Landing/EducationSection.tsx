@@ -25,12 +25,12 @@ export default function EducationSection() {
                 <div className={classes.blurBackground} />
                 <div className={classes.imageWrapper}>
                   <Image
-                    src="/images/hero/photo2.jpg"
+                    src="/images/hero/photo7.jpg"
                     height={400}
                     className={classes.image}
                   />
                   <Image
-                    src="/images/hero/photo3.jpg"
+                    src="/images/hero/photo8.jpg"
                     height={400}
                     className={classes.imageHover}
                   />
@@ -61,16 +61,15 @@ export default function EducationSection() {
               </Box>
             </Flex>
 
-            <Grid.Col span={{ base: 12 }}>
+            <Grid.Col span={{ base: 12 }} mah={200} pl={0}>
               <Box>
                 <Box
                   style={{
                     color: "white",
                     padding: "20px",
-                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
-                    justifyContent: "center",
+                    justifyContent: "between",
                     alignItems: "center",
                   }}
                 >
@@ -135,7 +134,7 @@ export default function EducationSection() {
         >
           <Box p="md" h="100%">
             <Center>
-              <Image src="/images/hero/photo3.jpg" h={600} />
+              <Image src="/images/hero/photo9.jpg" h={600} />
             </Center>
           </Box>
         </Grid.Col>

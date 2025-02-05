@@ -37,10 +37,13 @@
   align-items: center;
   overflow: hidden;
   border-radius: 0px;
+  width: 100%;
+  height: auto;
 }
 
 .image {
   border-radius: 0px;
+  width: 100%;
   transition:
     opacity 0.4s ease-in-out,
     transform 0.4s ease-in-out;
@@ -61,7 +64,7 @@
 
 .imageWrapper:hover .imageHover {
   opacity: 1;
-  transform: translateX(-50%) scale(1.05);
+  transform: translateX(-50%);
 }
 
 .imageWrapper:hover .image {
