@@ -1,0 +1,8 @@
+.hoverEffect {
+  transition: all 0.3s ease-in-out;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.1);
+  background-color: #f8a500 !important;
+}
