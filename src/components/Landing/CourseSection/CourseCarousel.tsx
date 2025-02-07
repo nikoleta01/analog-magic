@@ -6,7 +6,7 @@ import CourseCard from "./CourseCard";
 import { photoCoursesInfo } from "../../../data/photoCoursesInfo";
 
 const CourseCarousel = () => {
-  const autoplay = useRef(Autoplay({ delay: 2500 }));
+  const autoplay = useRef(Autoplay({ delay: 1500 }));
 
   return (
     <Carousel
