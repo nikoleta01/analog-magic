@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body,
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
