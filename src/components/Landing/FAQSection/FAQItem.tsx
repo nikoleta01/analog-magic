@@ -1,5 +1,7 @@
 import { Accordion } from "@mantine/core";
+
 import classes from "./FAQSection.module.css";
+
 import { FAQItemProps } from "@/types";
 
 const FAQItems = ({ question, answer, value, icon }: FAQItemProps) => {

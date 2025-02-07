@@ -1,11 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { Flex, Text, Title } from "@mantine/core";
 
-type SectionNameProps = {
-  sectionName: string;
-  sectionNumber: string;
-  sectionTitle: string;
-};
+import { SectionNameProps } from "@/types";
+
 const SectionName = ({
   sectionName,
   sectionNumber,

@@ -1,6 +1,8 @@
 import { IconPlus } from "@tabler/icons-react";
 import { Accordion, Container, ThemeIcon } from "@mantine/core";
+
 import classes from "./FAQSection.module.css";
+
 import FAQItem from "./FAQItem";
 import { faqQuestions } from "../../../data/faqQuestions";
 

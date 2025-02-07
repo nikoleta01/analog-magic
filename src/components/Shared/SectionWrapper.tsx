@@ -1,12 +1,8 @@
 import { Container } from "@mantine/core";
-import SectionName from "./SectionName";
 
-type SectionWrapperProps = {
-  sectionName: string;
-  sectionNumber: string;
-  children: React.ReactNode;
-  sectionTitle: string;
-};
+import SectionName from "./SectionName";
+import { SectionWrapperProps } from "@/types";
+
 const SectionWrapper = ({
   sectionName,
   sectionNumber,

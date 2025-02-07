@@ -1,8 +1,7 @@
-import { FAQQuestions } from "@/types";
 import { GiPhotoCamera } from "react-icons/gi";
 import { BsCamera } from "react-icons/bs";
 
-export const faqQuestions: FAQQuestions = [
+export const faqQuestions = [
   {
     question: "Why should I shoot on film instead of digital?",
     value: "film-instead-of-digital",

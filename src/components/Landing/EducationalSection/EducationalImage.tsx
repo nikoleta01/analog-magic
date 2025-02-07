@@ -1,4 +1,5 @@
 import { Box, Image } from "@mantine/core";
+
 import classes from "./EducationalSection.module.css";
 
 export function EducationImage({

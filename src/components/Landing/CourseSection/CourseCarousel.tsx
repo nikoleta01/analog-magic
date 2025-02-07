@@ -1,51 +1,10 @@
+import { useRef } from "react";
 import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { useRef } from "react";
+
 import CourseCard from "./CourseCard";
+import { photoCoursesInfo } from "../../../data/photoCoursesInfo";
 
-import { GiDeliveryDrone } from "react-icons/gi";
-import { HiMiniVideoCamera } from "react-icons/hi2";
-import { IoMdPhotos } from "react-icons/io";
-import {
-  MdOutlineLandscape,
-  MdOutlineMenuBook,
-  MdOutlineVideoCameraBack,
-} from "react-icons/md";
-
-const photoCoursesInfo = [
-  {
-    courseNumber: "01",
-    courseName: "Outdoor Photography",
-    icon: <MdOutlineVideoCameraBack size={60} color="white" />,
-  },
-  {
-    courseNumber: "02",
-    courseName: "Landscape Masterclass",
-    icon: <MdOutlineLandscape size={60} color="white" />,
-  },
-
-  {
-    courseNumber: "03",
-    courseName: "Straight From The Sky",
-    icon: <GiDeliveryDrone size={60} color="white" />,
-  },
-  {
-    courseNumber: "04",
-    courseName: "Indoor Photography",
-    icon: <HiMiniVideoCamera size={60} color="white" />,
-  },
-
-  {
-    courseNumber: "05",
-    courseName: "Golden Hour Academy",
-    icon: <IoMdPhotos size={60} color="white" />,
-  },
-  {
-    courseNumber: "06",
-    courseName: "Personalized Portfolio",
-    icon: <MdOutlineMenuBook size={60} color="white" />,
-  },
-];
 const CourseCarousel = () => {
   const autoplay = useRef(Autoplay({ delay: 2500 }));
 

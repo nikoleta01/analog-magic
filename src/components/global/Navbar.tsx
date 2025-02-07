@@ -1,6 +1,8 @@
 import { Box, Burger, Drawer, Group, Image, ScrollArea } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+
 import classes from "./Navbar.module.css";
+
 import { links } from "../../constants/Links";
 
 const Navbar = () => {

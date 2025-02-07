@@ -1,4 +1,5 @@
 import { Box, Text } from "@mantine/core";
+
 import classes from "./EducationalSection.module.css";
 
 export function EducationContent() {

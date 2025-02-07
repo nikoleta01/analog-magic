@@ -1,6 +1,7 @@
 import { Grid, Flex, Box, Center, Image } from "@mantine/core";
 
 import classes from "./EducationalSection.module.css";
+
 import { EducationImage } from "./EducationalImage";
 import { EducationContent } from "./EducationalContent";
 import { EducationStats } from "./EducationalStats";
