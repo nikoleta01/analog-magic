@@ -1,0 +1,63 @@
+.blurBackground {
+  position: absolute;
+  bottom: -80px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  background: orange;
+  filter: blur(50px);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  border-radius: 0px;
+  width: 100%;
+  transition:
+    opacity 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.imageHover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition:
+    opacity 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+}
+
+.imageWrapper:hover .imageHover {
+  opacity: 1;
+  transform: translateX(-50%);
+}
+
+.imageWrapper:hover .image {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.hideOnMobile {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hideOnMobile {
+    display: block;
+  }
+}

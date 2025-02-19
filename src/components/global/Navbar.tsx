@@ -1,13 +1,11 @@
 import {
   Box,
   Burger,
-  Button,
-  Divider,
   Drawer,
   Group,
   Image,
   ScrollArea,
-  useMantineTheme,
+  Text,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Navbar.module.css";
@@ -16,31 +14,34 @@ import { links } from "../../constants/Links";
 const Navbar = () => {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const theme = useMantineTheme();
 
   return (
     <Box pb={0}>
       <header className={classes.header}>
-        <Group justify="space-between" h="100%" mx={80}>
-          <Image src="/images/logo/logo1.png" h={80} w={180} />
-
-          <Group h="100%" gap={15} visibleFrom="lg" align="right">
+        <Group justify="space-between" h="100%" mx={40}>
+          <Image
+            src="/images/logo/logo1White.png"
+            alt="Logo"
+            width={40}
+            height={60}
+          />
+          <Group h="100%" gap={10} visibleFrom="sm" align="right">
             {links.map((link) => (
-              <a href={link.href} className={classes.link}>
+              <a
+                key={link.title}
+                href={link.href}
+                className={classes.desktopLink}
+              >
                 {link.title}
               </a>
             ))}{" "}
           </Group>
 
-          <Group visibleFrom={"lg"}>
-            <Button color={theme.colors.orange[6]}>Log in</Button>
-            <Button color="black">Sign up</Button>
-          </Group>
-
           <Burger
             opened={drawerOpened}
             onClick={toggleDrawer}
-            hiddenFrom="lg"
+            hiddenFrom="sm"
+            color="#e8e8e8"
           />
         </Group>
       </header>
@@ -48,27 +49,41 @@ const Navbar = () => {
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
-        size="40%"
+        size="60%"
         padding="md"
-        title="--logo-"
-        hiddenFrom="lg"
+        hiddenFrom="sm"
         zIndex={1000000}
         position="right"
+        closeButtonProps={{ color: "#e8e8e8" }}
         transitionProps={{ transition: "slide-left", duration: 550 }}
+        styles={{
+          content: { backgroundColor: "#0f0f0f", borderTop: "none" },
+          title: { color: "#e8e8e8" },
+          header: { borderBottom: "none", backgroundColor: "#0f0f0f" },
+        }}
+        title={
+          <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            <Image
+              src="/images/logo/logo1White.png"
+              alt="Logo"
+              width={40}
+              height={40}
+              mb={10}
+            />
+            <Text
+              sx={{ color: "#e8e8e8", fontWeight: "bold", marginBottom: 10 }}
+            >
+              ANAL(og)
+            </Text>
+          </Box>
+        }
       >
         <ScrollArea h="calc(100vh - 80px" mx="-md">
-          <Divider my="sm" />
           {links.map((link) => (
-            <a href={link.href} className={classes.link}>
+            <a href={link.href} key={link.title} className={classes.mobileLink}>
               {link.title}
             </a>
           ))}
-          <Divider my="sm" />
-
-          <Group justify="center" grow pb="xl" px="md">
-            <Button color={theme.colors.orange[6]}>Log in</Button>
-            <Button color="black">Sign up</Button>
-          </Group>
         </ScrollArea>
       </Drawer>
     </Box>
