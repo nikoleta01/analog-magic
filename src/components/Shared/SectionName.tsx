@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import { Flex, Text, Title } from "@mantine/core";
 
 type SectionNameProps = {
@@ -14,9 +13,10 @@ const SectionName = ({
   return (
     <Flex justify="center" direction="column" align="center" pb={50}>
       <Text size="xl" tt="uppercase" c="#e8e8e8" fw={700}>
-        <span style={{ color: "orange", fontSize: "16px" }}>
-          0{sectionNumber}//{" "}
-        </span>
+        <Text component="span" c="#f8a500" size="sm" fw={700}>
+          0{sectionNumber}
+          {"// "}
+        </Text>
         {sectionName}
       </Text>
       <Title order={1} size="50px" mb={15} c="#e8e8e8">

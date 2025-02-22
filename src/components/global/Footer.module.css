@@ -39,3 +39,7 @@
     justify-content: center;
   }
 }
+
+.invert {
+  filter: invert(1);
+}

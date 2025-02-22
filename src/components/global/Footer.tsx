@@ -6,6 +6,7 @@ import {
 import {
   ActionIcon,
   Anchor,
+  Box,
   Container,
   Group,
   Image,
@@ -32,12 +33,12 @@ const Footer = () => {
   ));
 
   return (
-    <div className={classes.footer}>
+    <Box className={classes.footer}>
       <Container>
-        <div className={classes.inner}>
+        <Box className={classes.inner}>
           <Image
+            className={classes.invert}
             src="/images/logo/logo2.png"
-            style={{ filter: "invert(1)" }}
             h={100}
             w={200}
             mb={10}
@@ -56,9 +57,9 @@ const Footer = () => {
               <IconBrandInstagram size={18} stroke={1.5} />
             </ActionIcon>
           </Group>
-        </div>
+        </Box>
       </Container>
-    </div>
+    </Box>
   );
 };
 

@@ -9,20 +9,16 @@ export function EducationImage({
   hoverImageSrc: string;
 }) {
   return (
-    <Box
-      w={{ base: "100%", md: "45%" }}
-      p="md"
-      style={{ position: "relative" }}
-    >
-      <div className={classes.blurBackground} />
-      <div className={classes.imageWrapper}>
+    <Box w={{ base: "100%", md: "45%" }} p="md" pos={"relative"}>
+      <Box className={classes.blurBackground} />
+      <Box className={classes.imageWrapper}>
         <Image src={imageSrc} height={400} className={classes.image} />
         <Image
           src={hoverImageSrc}
           height={400}
           className={classes.imageHover}
         />
-      </div>
+      </Box>
     </Box>
   );
 }

@@ -1,4 +1,12 @@
-import { Box, Burger, Drawer, Group, Image, ScrollArea } from "@mantine/core";
+import {
+  Box,
+  Burger,
+  Drawer,
+  Group,
+  Image,
+  ScrollArea,
+  Text,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./Navbar.module.css";
 import { links } from "../../constants/Links";
@@ -54,7 +62,7 @@ const Navbar = () => {
           header: { borderBottom: "none", backgroundColor: "#0f0f0f" },
         }}
         title={
-          <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <Image
               src="/images/logo/logo1White.png"
               alt="Logo"
@@ -62,17 +70,17 @@ const Navbar = () => {
               height={40}
               mb={10}
             />
-            <span
-              style={{ color: "#e8e8e8", fontWeight: "bold", marginBottom: 10 }}
+            <Text
+              sx={{ color: "#e8e8e8", fontWeight: "bold", marginBottom: 10 }}
             >
               ANAL(og)
-            </span>
-          </div>
+            </Text>
+          </Box>
         }
       >
         <ScrollArea h="calc(100vh - 80px" mx="-md">
           {links.map((link) => (
-            <a href={link.href} className={classes.mobileLink}>
+            <a href={link.href} key={link.title} className={classes.mobileLink}>
               {link.title}
             </a>
           ))}

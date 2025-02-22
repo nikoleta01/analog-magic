@@ -1,16 +1,8 @@
 import { Box, Text } from "@mantine/core";
-import classes from "./EducationalSection.module.css";
 
 export function EducationContent() {
   return (
-    <Box
-      w={{ base: "100%", md: "45%" }}
-      p="md"
-      fw={700}
-      size="30px"
-      mt={20}
-      className={classes.largePadding}
-    >
+    <Box w={{ base: "100%", md: "45%" }} p="md" fw={700} size="30px" mt={20}>
       <Text fw={500} size="30px" pt={20}>
         Lorem ipsum dolor sit amet consectetur adipisicin.
       </Text>
