@@ -39,8 +39,18 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Git workflow
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This repository utilizes [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow) for managing branches and pull requests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Commit Messages
+
+The project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for commit messages format.
+
+Branch name should always follow format `ANAl-123-short-description` where `ANAL-123` is Trello issue key.
+
+This means you should commit with a message according to conventional commits format, with additional scope defined in parentheses, using lowercase letters:
+
+```
+git commit -m "feat(scope): add new feature"
+```
